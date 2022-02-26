@@ -1,8 +1,4 @@
 Rails.application.routes.draw do
-  # namespace :api do
-  #   get 'messages/index'
-  # end
-
   namespace :api, defaults: { format: 'json' } do
     get '/messages', to: 'messages#index'
   end
